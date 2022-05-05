@@ -1,0 +1,21 @@
+{
+  "attributes": [
+    {
+      "trait_type": "Breed",
+      "value": "White China Rose"
+    },
+    {
+      "trait_type": "Petal Color",
+      "value": "White"
+    },
+    {
+      "trait_type": "Country of Origin",
+      "value": "India"
+    }
+  ],
+  "description": "The White China Rose , A single China Rose blooming in white during the monsoon season in Eastern India",
+  "image": "ipfs://Qmezq68XZkRADbt9MNshhexndvvczSEXd6Q9cb9kRm6tLC",
+  "name": "The Delicate Rose",
+  "location" : "Munger",
+  "photographer" : "Satadal Chakravarty"
+}
