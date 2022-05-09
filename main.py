@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
 from pathlib import Path
+import logging
 
 load_dotenv()
 
@@ -29,7 +30,9 @@ def nft_metadata_upload(input_data):
             "file_name": input_data['name'],
             "file_byte": file_binary
         }
+        print('Image hashing in Progress...')
         image_hash = upload_pinata(1, uploadData)
+        print('Image Uploaded at IPFS address : ',image_hash)
         input_data['image'] = image_hash
         del input_data['image_path']
 
@@ -41,9 +44,11 @@ def main():
     try:
         input_data = accumulate_data()
         hash = nft_metadata_upload(input_data)
-        print(hash)
-    except Exception as e:
-        print("Error: ", e)
+
+        print("NFT metadata location on IPFS : " , f"https://gateway.pinata.cloud/ipfs/{hash.split('/')[-1:][0]}")
+
+    except Exception:
+        logging.exception("An error occured while processing : ")
         
 
 if __name__ == "__main__":

@@ -1,7 +1,6 @@
 import os
 import requests
 
-
 pinata_base_url = os.getenv('PINATA_API_BASEURL') + "pinning/"
 headers = {
     "pinata_api_key": os.getenv('PINATA_API_KEY'),
