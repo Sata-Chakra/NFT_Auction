@@ -1,6 +1,6 @@
 # NFT_Auction
 
-THis code script interacts with an IPFS using the Pinata API.
+THis code script interacts with an IPFS using the Pinata API. Then it helps you mint your own NFT Tokens
 
 * Upload your image file to pinata
 * Get CID of image
